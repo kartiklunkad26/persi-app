@@ -1,11 +1,11 @@
 # persi-app
 Sample app to showcase persistence in CF
 
-Pre-requistes: 
+## Pre-requistes: 
 - A Cloud Foundry environment 
 - Deploy the [nfs-volume release](https://github.com/cloudfoundry-incubator/nfs-volume-release)
 
-Getting started
+## Getting started
 
 Once you have the environment ready, you should be able to run ```cf marketplace```
 
