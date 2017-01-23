@@ -19,20 +19,20 @@ nfs                           Existing                                   NFS vol
 
 - Create the NFS service
 
-`$ cf create-service nfs Existing myVolume -c '{"share":"<PRIVATE_IP>/export/vol1"}'`
+      `$ cf create-service nfs Existing myVolume -c '{"share":"<PRIVATE_IP>/export/vol1"}'`
 
 - Deploy the app
-`cf push kitty --no-start`
+      `cf push kitty --no-start`
 
 - Set the environment variable 
-`cf set-env kitty CF_SERVICE nfs`
+      `cf set-env kitty CF_SERVICE nfs`
 
 - Bind the service
 
-`cf bind-service kitty myVolume -c '{"uid":"1000","gid":"1000"}'`
+      `cf bind-service kitty myVolume -c '{"uid":"1000","gid":"1000"}'`
 
 - Start the app
 
-`cf start kitty`
+      `cf start kitty`
 
 This basic app will persist everything in a `test.txt` file. 
