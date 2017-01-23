@@ -11,8 +11,10 @@ Once you have the environment ready, you should be able to run ```cf marketplace
 
 You should be able to see the nfs service available there. 
 
-```service                       plans                                      description
+```
+service                       plans                                      description
 nfs                           Existing                                   NFS volumes secured with Kerberos (see: https://example.com/knfs-volume-release/)
+
 ```
 
 - Create the NFS service
