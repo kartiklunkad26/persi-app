@@ -20,6 +20,7 @@ nfs                           Existing                                   NFS vol
 - Create the NFS service
 
       `$ cf create-service nfs Existing myVolume -c '{"share":"10.193.51.150/export/vol1"}'`
+  You could also possibly use other folders in the nfs test server such as /export/vol2 or /export/vol3. You can also verify the files by bosh ssh into the nfs test server. 
 
 - Deploy the app
       `cf push kitty --no-start`
