@@ -19,7 +19,7 @@ nfs                           Existing                                   NFS vol
 
 - Create the NFS service
 
-      `$ cf create-service nfs Existing myVolume -c '{"share":"<PRIVATE_IP>/export/vol1"}'`
+      `$ cf create-service nfs Existing myVolume -c '{"share":"10.193.51.150/export/vol1"}'`
 
 - Deploy the app
       `cf push kitty --no-start`
